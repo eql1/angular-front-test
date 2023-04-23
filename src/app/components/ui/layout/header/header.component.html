@@ -1,0 +1,9 @@
+<nav class="nav">
+  <ul>
+    <li *ngFor="let item of menuItems" [ngClass]="">
+      <a [routerLink]="item.path" routerLinkActive="active">
+        <mat-icon class="icon">{{ item.icon }}</mat-icon>
+      </a>
+    </li>
+  </ul>
+</nav>
